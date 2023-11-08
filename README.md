@@ -12,4 +12,4 @@ To perform screenshot testing in Cypress, the process is pretty straight forward
 
 
 
-
+![image](https://github.com/Anshita-Bhasin/Cypress-Screenshot-Testing/assets/10338077/f726405d-ea25-4d55-a438-177c708fd1c5)
