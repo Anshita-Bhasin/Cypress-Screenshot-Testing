@@ -25,7 +25,7 @@ Go to terminal and install the plugin by using the command : npm install --save-
 ## Step2 : Import and initialize the Cypress image snapshot plugin
 For Cypress version 10 and above: Go to cypress.config.js and add the below code:
 
-```
+`````
 Implementation
 
  
@@ -36,5 +36,22 @@ Implementation
     setupNodeEvents(on) {
       addMatchImageSnapshotPlugin(on)
     },   },  })
+
+
+## Step3 : Import and add Cypress image command:
+For Cypress version 10 and above: Go to cypress/support/commands.js and add the below code:
+
+Implementation
+
+ ```
+ import { addMatchImageSnapshotCommand } from '@simonsmith/cypress-image-snapshot/command'
+
+
+ addMatchImageSnapshotCommand()
+// can also add any default options to be used
+// by all instances of `matchImageSnapshot`
+ addMatchImageSnapshotCommand({
+    failureThreshold: 0.2,
+})
 
 
