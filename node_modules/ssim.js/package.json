@@ -1,0 +1,80 @@
+{
+  "name": "ssim.js",
+  "description": "JavaScript implementation of the SSIM algorithm",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "browser": "dist/ssim.web",
+  "version": "3.5.0",
+  "scripts": {
+    "format-all": "git ls-files {src,spec}*.{ts,js,json} | xargs yarn format",
+    "format": "prettier --write --single-quote --no-semi --trailing-comma es5",
+    "commit": "git-cz",
+    "test": "jest --testTimeout=500000",
+    "lint": "eslint .",
+    "build": "rm -rf dist && tsc && webpack --mode=production",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "url": "https://github.com/obartra/ssim.git",
+    "type": "git"
+  },
+  "keywords": [
+    "ssim",
+    "mssim",
+    "ssim_map",
+    "image",
+    "compare",
+    "structural",
+    "similarity",
+    "processing"
+  ],
+  "author": "Oscar Bartra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obartra/ssim/issues"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "src",
+    "dist"
+  ],
+  "homepage": "https://github.com/obartra/ssim#readme",
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/github": "7.1.1",
+    "@semantic-release/npm": "7.0.6",
+    "@types/jest": "26.0.14",
+    "@types/node": "13.11.1",
+    "benchmark": "2.1.4",
+    "bmp-js": "0.1.0",
+    "canvas": "2.6.1",
+    "commitizen": "4.2.1",
+    "core-js": "3.6.5",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.11.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.21.4",
+    "image-type": "4.1.0",
+    "jest": "26.5.3",
+    "nodemon": "2.0.4",
+    "prettier": "2.1.2",
+    "request": "2.88.2",
+    "semantic-release": "17.2.1",
+    "semantic-release-cli": "5.4.0",
+    "ts-jest": "26.4.1",
+    "ts-loader": "8.0.4",
+    "typescript": "4.0.3",
+    "webpack": "5.0.0",
+    "webpack-cli": "4.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -6,9 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Anshita Bhasin",
+  "author": "Anshita Bhasin <anshita@propertyfinder.ae>",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.4.0"
+    "cypress": "^13.5.0",
+    "lambdatest-cypress-cli": "^3.0.25"
+  },
+  "devDependencies": {
+    "@simonsmith/cypress-image-snapshot": "^9.0.1"
   }
 }
