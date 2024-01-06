@@ -62,10 +62,17 @@ Implementation
 Using the LambdaTest platform, you can perform regression testing with just one click and effortlessly identify Visual UI Regression bugs through the assistance of Smart Testing.In this blog,I will explain step-by-step , how to execute Visual Regression tests on Cypress Cloud Platform.
 
 Step 1: Install LambdaTest CLI.
-Install LambdaTest CLI using npm, use the below command: <npm install lambdatest-cypress-cli>
+Install LambdaTest CLI using npm, use the below command: 
+```
+<npm install lambdatest-cypress-cli>
+```
 
 Step 2: Set up the config.
-Once the LambdaTest CLI is installed, now we need to set up the configuration using the below command: <lambdatest-cypress init>
+Once the LambdaTest CLI is installed, now we need to set up the configuration using the below command: 
+```
+<lambdatest-cypress init>
+
+```
 After running the command, there will be a file created in your project named “lambdatest-config.json”. We need to set up the configuration in order to run our test case on different browsers on LambdaTest.
 
 For Cypress version 10 and above, you can follow the below code to set up lambdatest-config.json.
