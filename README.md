@@ -25,7 +25,7 @@ Go to terminal and install the plugin by using the command : npm install --save-
 ## Step2 : Import and initialize the Cypress image snapshot plugin
 For Cypress version 10 and above: Go to cypress.config.js and add the below code:
 
-`````
+```
 Implementation
 
  
@@ -36,6 +36,8 @@ Implementation
     setupNodeEvents(on) {
       addMatchImageSnapshotPlugin(on)
     },   },  })
+
+```
 
 
 ## Step3 : Import and add Cypress image command:
@@ -53,6 +55,7 @@ Implementation
  addMatchImageSnapshotCommand({
     failureThreshold: 0.2,
 })
+```
 
 ## How to use perform screenshot testing on Cypress Cloud Grid
 
@@ -67,8 +70,7 @@ After running the command, there will be a file created in your project named â€
 
 For Cypress version 10 and above, you can follow the below code to set up lambdatest-config.json.
 
-
-
+```
 
 {
    "lambdatest_auth": {
@@ -117,7 +119,7 @@ For Cypress version 10 and above, you can follow the below code to set up lambda
    }
 }
 
-
+```
 
 Step 3: Execute Test Case
 Once the config is done, now you can execute the Cypress test case on the LambdaTest cloud Platform using the below command  <lambdatest-cypress run>
