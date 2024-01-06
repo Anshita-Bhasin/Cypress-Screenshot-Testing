@@ -13,3 +13,28 @@ To perform screenshot testing in Cypress, the process is pretty straight forward
 
 
 ![image](https://github.com/Anshita-Bhasin/Cypress-Screenshot-Testing/assets/10338077/f726405d-ea25-4d55-a438-177c708fd1c5)
+
+
+# Mastering Screenshot Testing with Cypress-Image-Snapshot Plugin
+
+To ensure your website looks perfect, the cypress-image-screenshot Plugin is an excellent choice. It is free to use (MIT License) plugin that has more than nine releases at the moment.This plugin lets you capture specific snapshots during tests and compare them to reference screenshots, pinpointing differences in DOM, layout, or visual properties.
+
+## Step1: Plugin Installation
+Go to terminal and install the plugin by using the command : npm install --save-dev @simonsmith/cypress-image-snapshot
+
+## Step2 : Import and initialize the Cypress image snapshot plugin
+For Cypress version 10 and above: Go to cypress.config.js and add the below code:
+
+```
+Implementation
+
+ 
+ const { addMatchImageSnapshotPlugin } = require ('@simonsmith/cypress-image-snapshot/plugin')
+ const { defineConfig } = require ('cypress')
+ module.exports= defineConfig({
+  e2e: {
+    setupNodeEvents(on) {
+      addMatchImageSnapshotPlugin(on)
+    },   },  })
+
+
