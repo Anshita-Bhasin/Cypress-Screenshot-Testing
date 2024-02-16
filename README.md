@@ -59,7 +59,7 @@ Implementation
 
 ## How to use perform screenshot testing on Cypress Cloud Grid
 
-Using the LambdaTest platform, you can perform regression testing with just one click and effortlessly identify Visual UI Regression bugs through the assistance of Smart Testing.In this blog,I will explain step-by-step , how to execute Visual Regression tests on Cypress Cloud Platform.
+Using the LambdaTest platform, you can perform regression testing with just one click and effortlessly identify Visual UI Regression bugs through the assistance of Smart Testing. Below is the step-by-step instructions on how to execute Visual Regression tests on Cypress Cloud Platform.
 
 Step 1: Install LambdaTest CLI.
 Install LambdaTest CLI using npm, use the below command: 
