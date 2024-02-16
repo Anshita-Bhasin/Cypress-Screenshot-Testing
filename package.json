@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --spec cypress/tests/screenshot.cy.js"
   },
-  "author": "Anshita Bhasin <anshita@propertyfinder.ae>",
+  "author": "Anshita Bhasin",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.5.0",
-    "lambdatest-cypress-cli": "^3.0.25"
+    "cypress": "^13.2.0",
+    "lambdatest-cypress-cli": "3.0.26"
   },
   "devDependencies": {
     "@simonsmith/cypress-image-snapshot": "^9.0.1"
