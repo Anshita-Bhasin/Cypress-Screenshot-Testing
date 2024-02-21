@@ -1,21 +1,11 @@
 {
   "lambdatest_auth": {
     "username": "<user.name>",
-    "access_key": "<access_key>"
+    "access_key": "<access_key"
   },
   "browsers": [
     {
       "browser": "Chrome",
-      "platform": "Windows 10",
-      "versions": ["latest-1"]
-    },
-    {
-      "browser": "Chrome",
-      "platform": "Windows 10",
-      "versions": ["latest-1"]
-    },
-    {
-      "browser": "Firefox",
       "platform": "Windows 10",
       "versions": ["latest-1"]
     },
@@ -26,9 +16,10 @@
     }
   ],
   "run_settings": {
+    "config_file": "cypress.config.js",
     "reporter_config_file": "base_reporter_config.json",
     "build_name": "screenshot-test-build",
-    "parallels": 4,
+    "parallels": 1,
     "specs": "./cypress/e2e/screenshot.cy.js",
     "ignore_files": "",
     "network": false,
@@ -39,7 +30,7 @@
     },
     "smart_ui": {
       "project": "screenshotTest",
-      "baseline": false
+      "baseline": true
     }
   }
 }
